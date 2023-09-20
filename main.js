@@ -3,7 +3,7 @@ let myTbala = document.querySelector("#myData");
 addEventListener("DOMContentLoaded", async () => {
     let res = await (await fetch("https://6509d043f6553137159c1059.mockapi.io/tabla")).json();
     for (let i = 0; i < res.length; i++) {
-        const newRow = document.createElement("tr");
+        const newRow = document.createElement("th");
         newRow.insertAdjacentElement = `
         <td>${res[i].id}</td>
         <td>${res[i].valor}</td>
